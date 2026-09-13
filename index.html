@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triple Helix | District Innovation Hackathon</title>
+  <meta name="description" content="Triple Helix is a proposed district-level hackathon initiative connecting government, academic institutions and industry partners in Chengalpattu district, Tamil Nadu, to work on real-world problem statements." />
+  <meta name="theme-color" content="#0A2540" />
+
+  <meta property="og:title" content="Triple Helix | District Innovation Hackathon" />
+  <meta property="og:description" content="Government × Academia × Industry — a proposed district innovation initiative in Chengalpattu, Tamil Nadu." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/problems.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Utility bar: transparent status disclosure, not a fake official crest -->
+  <div class="utility-bar">
+    <div class="container utility-bar__row">
+      <div class="utility-bar__note">
+        <span class="visually-hidden">Site status:</span>
+        <strong>Prototype</strong>
+        <span>— demonstration content, not an official government publication</span>
+      </div>
+      <nav class="utility-bar__links" aria-label="Utility links">
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header__row">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8C6 8 14 16 20 20C26 24 34 32 34 32" stroke="#0A2540" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M6 20C6 20 14 16 20 20C26 24 34 20 34 20" stroke="#155A8A" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M6 32C6 32 14 16 20 20C26 24 34 8 34 8" stroke="#0F6E5C" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Triple Helix</span>
+          <span class="brand__subline">District Innovation Initiative</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="main-nav__list">
+          <!-- Populated from siteConfig.navLinks via main.js render, static fallback below -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#model">Triple Helix</a></li>
+          <li><a href="#problem-statements">Problem Statements</a></li>
+          <li><a href="#guidelines">Guidelines</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#evaluation">Evaluation</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__cta">
+        <a class="btn btn-primary" href="#registration" data-register-cta>Register Now</a>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M3 6H19M3 11H19M3 16H19" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <ul class="mobile-nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#model">Triple Helix</a></li>
+        <li><a href="#problem-statements">Problem Statements</a></li>
+        <li><a href="#guidelines">Guidelines</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#evaluation">Evaluation</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-nav__cta">
+        <a class="btn btn-primary" href="#registration" data-register-cta>Register Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="container hero__grid">
+        <div class="hero__intro">
+          <div class="hero__meta">
+            <span class="hero__district">Chengalpattu District, Tamil Nadu</span>
+            <span class="status-tag">Proposed Initiative — To Be Confirmed</span>
+          </div>
+          <h1 id="hero-heading">Triple Helix: District Innovation Hackathon</h1>
+          <p class="hero__model">Government × Academia × Industry</p>
+          <p class="hero__lede">
+            A proposed district-level initiative connecting government departments, academic institutions and industry partners to work on real-world problem statements — from identification through prototyping and evaluation.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#registration" data-register-cta>Register Now</a>
+            <a class="btn btn-secondary" href="#problem-statements">Explore Problem Statements</a>
+          </div>
+        </div>
+
+        <aside class="hero__panel" aria-label="Event summary">
+          <div class="hero__panel-header">At a Glance</div>
+          <div class="hero__panel-body">
+            <div class="hero__panel-row">
+              <span class="hero__panel-label">Organising district</span>
+              <span class="hero__panel-value">Chengalpattu, Tamil Nadu</span>
+            </div>
+            <div class="hero__panel-row">
+              <span class="hero__panel-label">Registration opens</span>
+              <span class="hero__panel-value">To Be Announced</span>
+            </div>
+            <div class="hero__panel-row">
+              <span class="hero__panel-label">Registration deadline</span>
+              <span class="hero__panel-value">To Be Announced</span>
+            </div>
+            <div class="hero__panel-row">
+              <span class="hero__panel-label">Event dates</span>
+              <span class="hero__panel-value">To Be Announced</span>
+            </div>
+            <div class="hero__panel-row">
+              <span class="hero__panel-label">Team size</span>
+              <span class="hero__panel-value">To Be Announced</span>
+            </div>
+            <div class="hero__panel-row">
+              <span class="hero__panel-label">Mode</span>
+              <span class="hero__panel-value">To Be Announced</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About / Triple Helix Model -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">About Triple Helix</span>
+          <h2 id="about-heading">Three institutions, one shared problem-solving process</h2>
+          <p>
+            Triple Helix is structured around three participating groups, each contributing a distinct role. This is a conceptual model for the prototype and will be refined as the initiative is formally structured.
+          </p>
+        </div>
+
+        <div class="helix-grid" id="model">
+          <article class="helix-card helix-card--government">
+            <div class="helix-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 4L28 10V13H4V10L16 4Z" stroke="#0A2540" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M6 13V24M12 13V24M20 13V24M26 13V24" stroke="#0A2540" stroke-width="2"/>
+                <path d="M4 24H28V28H4V24Z" stroke="#0A2540" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Government</h3>
+            <p>Identifies real-world challenges and administrative priorities, and provides problem statements for participants to work on.</p>
+          </article>
+
+          <article class="helix-card helix-card--academia">
+            <div class="helix-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 5L29 11L16 17L3 11L16 5Z" stroke="#155A8A" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9 14V21C9 21 12 24 16 24C20 24 23 21 23 21V14" stroke="#155A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29 11V19" stroke="#155A8A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Academia</h3>
+            <p>Contributes student talent, research capability and mentorship from faculty to develop and refine proposed solutions.</p>
+          </article>
+
+          <article class="helix-card helix-card--industry">
+            <div class="helix-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M6 28V14L12 10V28" stroke="#0F6E5C" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 28V6L20 2V28" stroke="#0F6E5C" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M20 28V12L26 16V28" stroke="#0F6E5C" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M4 28H28" stroke="#0F6E5C" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Industry</h3>
+            <p>Provides technical expertise, mentorship and technology support, and may offer pathways toward implementation or pilots.</p>
+          </article>
+        </div>
+
+        <div class="about__note">
+          <span aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="#4A5568" stroke-width="1.3"/><path d="M10 9V14" stroke="#4A5568" stroke-width="1.3" stroke-linecap="round"/><circle cx="10" cy="6.3" r="0.9" fill="#4A5568"/></svg>
+          </span>
+          <p><strong>Note:</strong> The Triple Helix model, participant roles and organisational structure described here are proposed for this prototype and are subject to official confirmation by the district administration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Statements -->
+    <section class="problems" id="problem-statements" aria-labelledby="problems-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Problem Statements</span>
+          <h2 id="problems-heading">Real-world challenges to work on</h2>
+          <p>Search or filter by theme and department to find a problem statement to work on.</p>
+        </div>
+
+        <div class="sample-banner" role="note">
+          <strong>Sample problem statements — for demonstration only</strong>
+          These are illustrative examples used to preview the interface. Official problem statements, department names and IDs will replace this content once released by the district administration.
+        </div>
+
+        <div class="problem-filters">
+          <div class="field">
+            <label for="problem-search">Search</label>
+            <input type="search" id="problem-search" placeholder="Search by title, ID, or department" />
+          </div>
+          <div class="field">
+            <label for="problem-theme-filter">Theme</label>
+            <select id="problem-theme-filter">
+              <option value="all">All themes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="problem-dept-filter">Department</label>
+            <select id="problem-dept-filter">
+              <option value="all">All departments</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="problem-results-count" id="problem-results-count" aria-live="polite"></p>
+
+        <div class="problem-grid" id="problem-grid"></div>
+      </div>
+    </section>
+
+    <!-- Indicative Themes -->
+    <section class="themes" id="themes" aria-labelledby="themes-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Indicative Themes — To Be Finalized</span>
+          <h2 id="themes-heading">Domains problem statements may draw from</h2>
+          <p>These themes are indicative of the kinds of domains problem statements may cover, and are subject to change once official themes are finalized.</p>
+        </div>
+        <div class="themes-grid">
+          <span class="theme-chip">Smart Governance</span>
+          <span class="theme-chip">Education</span>
+          <span class="theme-chip">Healthcare</span>
+          <span class="theme-chip">Agriculture</span>
+          <span class="theme-chip">Environment</span>
+          <span class="theme-chip">Mobility</span>
+          <span class="theme-chip">Public Safety</span>
+          <span class="theme-chip">Tourism</span>
+          <span class="theme-chip">FinTech</span>
+          <span class="theme-chip">Clean Technology</span>
+          <span class="theme-chip">Rural Development</span>
+          <span class="theme-chip">Digital Services</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guidelines: eligibility, team requirements, rules, do's and don'ts -->
+    <section class="section-alt" id="guidelines" aria-labelledby="guidelines-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Guidelines</span>
+          <h2 id="guidelines-heading">Eligibility, team requirements and rules</h2>
+          <p>Detailed official guidelines will be published closer to launch. The structure below shows what will be covered.</p>
+        </div>
+
+        <div class="guidelines-list">
+          <div class="guidelines-group">
+            <h3>Who can participate</h3>
+            <ul>
+              <li>Eligibility criteria will be announced officially.</li>
+              <li>Potential participant categories may include students, college teams and academic institutions.</li>
+              <li>Cross-disciplinary participation is recommended, subject to confirmation.</li>
+            </ul>
+          </div>
+          <div class="guidelines-group">
+            <h3>Team requirements</h3>
+            <ul>
+              <li>Team size: <strong>To Be Announced</strong></li>
+              <li>Institution requirements: <strong>To Be Announced</strong></li>
+              <li>Cross-disciplinary teams: recommended, to be confirmed</li>
+            </ul>
+          </div>
+          <div class="guidelines-group">
+            <h3>Submission and conduct</h3>
+            <ul>
+              <li>Submission requirements will be published with official guidelines.</li>
+              <li>Use of external resources must be cited appropriately.</li>
+              <li>Intellectual property and disqualification conditions will be defined in official rules.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dodont-grid" aria-label="Dos and don'ts" style="margin-bottom: var(--sp-6);">
+          <div class="dodont-column dodont-column--do">
+            <h3>Do</h3>
+            <ul>
+              <li>Understand the problem statement clearly before building</li>
+              <li>Build a practical, working solution where possible</li>
+              <li>Cite any external resources or datasets used</li>
+              <li>Follow the submission requirements once published</li>
+              <li>Maintain ethical standards throughout</li>
+            </ul>
+          </div>
+          <div class="dodont-column dodont-column--dont">
+            <h3>Don't</h3>
+            <ul>
+              <li>Submit copied or plagiarised work</li>
+              <li>Misrepresent third-party work as your own</li>
+              <li>Violate intellectual property rights</li>
+              <li>Ignore official submission rules once published</li>
+              <li>Use fabricated data in your submission</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="guidelines-download">
+          <p>Official guidelines will be published here once finalised.</p>
+          <button class="btn btn-ghost" type="button" aria-disabled="true" title="Guidelines document not yet available">Download Guidelines</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process / How It Works -->
+    <section id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Process</span>
+          <h2 id="process-heading">How it works</h2>
+          <p>A proposed sequence from registration through to recognition. Subject to change once the official programme structure is confirmed.</p>
+        </div>
+        <div class="process-list">
+          <div class="process-step">
+            <span class="process-step__number">01</span>
+            <h3>Register</h3>
+            <p>Submit registration details through the official form once it opens.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">02</span>
+            <h3>Select</h3>
+            <p>Choose a problem statement from the published list.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">03</span>
+            <h3>Build</h3>
+            <p>Develop a proposed solution or working prototype.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">04</span>
+            <h3>Present</h3>
+            <p>Present the solution to the evaluation panel.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">05</span>
+            <h3>Evaluate</h3>
+            <p>Solutions are assessed against the published evaluation criteria.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">06</span>
+            <h3>Recognise / Implement</h3>
+            <p>Selected solutions may receive recognition, mentorship or further opportunities, subject to the official programme structure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section-alt" id="timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Timeline</span>
+          <h2 id="timeline-heading">Key stages</h2>
+          <p>All dates below are placeholders pending official confirmation.</p>
+        </div>
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span><span class="timeline-item__line"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Problem Statements Released</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span><span class="timeline-item__line"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Registration Opens</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span><span class="timeline-item__line"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Registration Closes</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span><span class="timeline-item__line"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Submission &amp; Screening</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span><span class="timeline-item__line"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Evaluation</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span><span class="timeline-item__line"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Finale</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__rail"><span class="timeline-item__dot"></span></div>
+            <div class="timeline-item__body"><span class="timeline-item__stage">Recognition</span><span class="timeline-item__date">To Be Announced</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation -->
+    <section id="evaluation" aria-labelledby="evaluation-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Indicative Evaluation Criteria — Subject to Official Guidelines</span>
+          <h2 id="evaluation-heading">How submissions may be assessed</h2>
+          <p>These criteria are indicative and intended to guide preparation. Official evaluation criteria will be published with the guidelines.</p>
+        </div>
+        <div class="evaluation-list">
+          <div class="evaluation-item"><h3>Problem Understanding</h3><p>How clearly the submission addresses the stated problem.</p></div>
+          <div class="evaluation-item"><h3>Innovation</h3><p>Originality of the proposed approach.</p></div>
+          <div class="evaluation-item"><h3>Technical Approach</h3><p>Soundness of the technical implementation.</p></div>
+          <div class="evaluation-item"><h3>Feasibility</h3><p>Practicality of building and deploying the solution.</p></div>
+          <div class="evaluation-item"><h3>Impact</h3><p>Potential benefit to the intended users or community.</p></div>
+          <div class="evaluation-item"><h3>Scalability</h3><p>Whether the approach could extend beyond the initial scope.</p></div>
+          <div class="evaluation-item"><h3>Presentation</h3><p>Clarity of the final presentation to the evaluation panel.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Announcements -->
+    <section class="section-alt" id="announcements" aria-labelledby="announcements-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Announcements</span>
+          <h2 id="announcements-heading">Latest updates</h2>
+        </div>
+        <div class="announcements-grid">
+          <div class="announcement-card">
+            <h3>Problem Statements</h3>
+            <span class="status-tag status-tag--info">Coming Soon</span>
+          </div>
+          <div class="announcement-card">
+            <h3>Registration</h3>
+            <span class="status-tag status-tag--info">Coming Soon</span>
+          </div>
+          <div class="announcement-card">
+            <h3>Official Guidelines</h3>
+            <span class="status-tag status-tag--info">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration" aria-labelledby="registration-heading">
+      <div class="container">
+        <div class="registration-panel">
+          <div>
+            <span class="eyebrow">Registration</span>
+            <h2 id="registration-heading">Ready to take part?</h2>
+            <p style="margin-top: var(--sp-3); margin-bottom: var(--sp-5); color: var(--color-text-muted);">
+              Registration will open closer to the event launch. Register your interest to be notified once the official form is live.
+            </p>
+            <a class="btn btn-primary" href="#registration" data-register-cta>Register Now</a>
+          </div>
+          <div class="registration-panel__facts">
+            <div class="registration-fact"><span>Registration opens</span><span>To Be Announced</span></div>
+            <div class="registration-fact"><span>Registration deadline</span><span>To Be Announced</span></div>
+            <div class="registration-fact"><span>Team size</span><span>To Be Announced</span></div>
+            <div class="registration-fact"><span>Mode</span><span>To Be Announced</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry & Institutional Partnerships -->
+    <section class="section-alt" id="partnerships" aria-labelledby="partnerships-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Industry &amp; Institutional Partnerships</span>
+          <h2 id="partnerships-heading">Support the initiative</h2>
+          <p>Organisations may potentially contribute to Triple Helix in a number of ways. No partnerships are confirmed at this stage — this section describes potential avenues of involvement.</p>
+        </div>
+        <div class="partners-grid">
+          <span class="partner-item">Mentorship</span>
+          <span class="partner-item">Technology Support</span>
+          <span class="partner-item">Problem Statements</span>
+          <span class="partner-item">Sponsorship</span>
+          <span class="partner-item">Expert Evaluation</span>
+          <span class="partner-item">Pilot Opportunities</span>
+        </div>
+        <a class="btn btn-secondary" href="#contact">Become a Partner</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-heading">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is Triple Helix an officially confirmed government programme?</summary>
+            <p>Triple Helix is currently a prototype and proposed initiative. Official status, ownership and endorsement will be confirmed by the district administration before launch.</p>
+          </details>
+          <details class="faq-item">
+            <summary>When does registration open?</summary>
+            <p>Registration dates have not been finalised. This page will be updated once an official date is announced.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Who can participate?</summary>
+            <p>Eligibility criteria are to be announced. Proposed participant categories include students, college teams and academic institutions.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How can my organisation get involved as an industry partner?</summary>
+            <p>Use the contact section below to express interest. No partnerships are confirmed at this stage.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-heading">Get in touch</h2>
+        </div>
+        <div class="contact-card">
+          <p>Official contact details will be published here once confirmed.</p>
+          <p class="contact-placeholder">Placeholder — Email: contact@example.org (PLACEHOLDER)</p>
+          <p class="contact-placeholder">Placeholder — Phone: To Be Announced (PLACEHOLDER)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand__name">Triple Helix</span>
+          <p class="footer-brand__tagline">Government × Academia × Industry — a proposed district innovation initiative for Chengalpattu district, Tamil Nadu.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#problem-statements">Problem Statements</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Important Links</h3>
+          <ul>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Triple Helix. Prototype — official ownership to be confirmed.</span>
+        <span>Chengalpattu District, Tamil Nadu</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/problems.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

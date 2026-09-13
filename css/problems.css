@@ -1,0 +1,193 @@
+/* Problem Statements */
+.problems {
+  background: var(--color-surface);
+  border-top: var(--border-w) solid var(--color-border);
+  border-bottom: var(--border-w) solid var(--color-border);
+}
+
+.sample-banner {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: flex-start;
+  background: var(--color-warning-bg);
+  border: var(--border-w) solid var(--color-warning-border);
+  color: var(--color-warning-text);
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--sp-6);
+  font-size: var(--fs-small);
+}
+
+.sample-banner strong {
+  display: block;
+  margin-bottom: var(--sp-1);
+  font-size: var(--fs-body);
+}
+
+/* Filter bar */
+.problem-filters {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+@media (max-width: 760px) {
+  .problem-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.field label {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-muted);
+}
+
+.field input[type="search"],
+.field select {
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-3);
+  border: var(--border-w) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-body);
+  font-family: var(--font-base);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.field input[type="search"]:focus,
+.field select:focus {
+  border-color: var(--color-steel);
+}
+
+.problem-results-count {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  margin-bottom: var(--sp-4);
+}
+
+/* Card grid */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--sp-5);
+}
+
+.problem-card {
+  border: var(--border-w) solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.problem-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--sp-3);
+}
+
+.problem-card__id {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-steel);
+}
+
+.problem-card__theme {
+  font-size: var(--fs-micro);
+  font-weight: var(--fw-semibold);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  border: var(--border-w) solid var(--color-border);
+  padding: 2px var(--sp-2);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.problem-card h3 {
+  font-size: 1.05rem;
+}
+
+.problem-card__dept {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.problem-card__summary {
+  font-size: var(--fs-small);
+  color: var(--color-text);
+}
+
+.problem-card__details {
+  display: none;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  border-top: var(--border-w) solid var(--color-border);
+  padding-top: var(--sp-3);
+}
+
+.problem-card[data-expanded="true"] .problem-card__details {
+  display: block;
+}
+
+.problem-card__toggle {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  color: var(--color-steel);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  padding: var(--sp-1) 0;
+  cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+.problem-card__toggle:hover {
+  color: var(--color-ink);
+}
+
+.problem-card__toggle svg {
+  transition: transform var(--dur-fast) var(--ease-standard);
+}
+
+.problem-card[data-expanded="true"] .problem-card__toggle svg {
+  transform: rotate(180deg);
+}
+
+.problem-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: var(--sp-8) 0;
+  font-size: var(--fs-body-lg);
+}
+
+/* Themes section */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--sp-3);
+}
+
+.theme-chip {
+  border: var(--border-w) solid var(--color-border);
+  background: var(--color-paper);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}

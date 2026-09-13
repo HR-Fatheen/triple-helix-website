@@ -1,0 +1,179 @@
+/* Hero */
+.hero {
+  background: var(--color-surface);
+  border-bottom: var(--border-w) solid var(--color-border);
+  padding-block: var(--sp-9);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+.hero__grid > * {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.hero__district {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-muted);
+}
+
+.hero h1 {
+  margin-bottom: var(--sp-3);
+}
+
+.hero__model {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  color: var(--color-steel);
+  margin-bottom: var(--sp-4);
+}
+
+.hero__lede {
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--sp-6);
+  max-width: 56ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  max-width: 100%;
+}
+
+.hero__actions .btn {
+  flex: 0 1 auto;
+}
+
+/* Hero side panel: a structured info card rather than an illustration */
+.hero__panel {
+  border: var(--border-w) solid var(--color-border);
+  background: var(--color-paper);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.hero__panel-header {
+  background: var(--color-ink);
+  color: var(--color-text-inverse);
+  padding: var(--sp-4) var(--sp-5);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+}
+
+.hero__panel-body {
+  padding: var(--sp-5);
+}
+
+.hero__panel-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--sp-1) var(--sp-4);
+  padding-block: var(--sp-3);
+  border-bottom: var(--border-w) solid var(--color-border);
+}
+
+.hero__panel-row:last-child {
+  border-bottom: none;
+}
+
+.hero__panel-label {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.hero__panel-value {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-ink);
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+/* About / Triple Helix model */
+.about {
+  background: var(--color-paper);
+}
+
+.helix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-5);
+  margin-bottom: var(--sp-6);
+}
+
+@media (max-width: 800px) {
+  .helix-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.helix-card {
+  background: var(--color-surface);
+  border: var(--border-w) solid var(--color-border);
+  border-top: 3px solid var(--color-ink);
+  padding: var(--sp-5);
+}
+
+.helix-card--academia {
+  border-top-color: var(--color-steel);
+}
+
+.helix-card--industry {
+  border-top-color: var(--color-accent);
+}
+
+.helix-card__icon {
+  margin-bottom: var(--sp-4);
+}
+
+.helix-card h3 {
+  font-size: var(--fs-body-lg);
+  margin-bottom: var(--sp-2);
+}
+
+.helix-card p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-body);
+}
+
+.about__note {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: flex-start;
+  border: var(--border-w) solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--radius-md);
+  max-width: var(--content-narrow);
+}
+
+.about__note p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+}
+
+.about__note strong {
+  color: var(--color-text);
+}

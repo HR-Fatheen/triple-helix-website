@@ -1,0 +1,67 @@
+:root {
+  /* Color */
+  --color-ink: #0A2540;          /* primary institutional navy */
+  --color-ink-700: #123A5E;
+  --color-steel: #155A8A;        /* links, secondary interactive */
+  --color-accent: #0F6E5C;       /* single restrained accent (status/active only) */
+  --color-accent-tint: #E4F1EE;
+  --color-paper: #F6F7F9;        /* page background */
+  --color-surface: #FFFFFF;
+  --color-border: #D8DEE5;
+  --color-text: #16202B;
+  --color-text-muted: #4A5568;
+  --color-text-inverse: #F6F7F9;
+  --color-warning-bg: #FFF6E5;
+  --color-warning-border: #E9C46A;
+  --color-warning-text: #6B4E00;
+
+  /* Type */
+  --font-base: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-tamil: "Noto Sans Tamil", var(--font-base);
+
+  --fs-h1: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+  --fs-h2: clamp(1.5rem, 1.3rem + 0.8vw, 2.0625rem);
+  --fs-h3: 1.375rem;
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+
+  --lh-heading: 1.2;
+  --lh-body: 1.6;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Spacing scale (8px base) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+
+  /* Layout */
+  --content-max: 1180px;
+  --content-narrow: 760px;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --border-w: 1px;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+  }
+}
